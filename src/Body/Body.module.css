@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(245, 225, 122, 0.795);
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+}
+
+.reactprojects {
+  text-align: center;
+  margin-bottom: 4px;
+  margin-top: 35px;
+}
+
+.undertext {
+  color: rgba(56, 56, 56, 0.753);
+  margin-top: 8px;
+}
+
+.underline {
+  height: 0.15rem;
+  width: 18rem;
+  background: rgba(141, 141, 255, 0.808);
+  margin: 0 auto 0px;
+}

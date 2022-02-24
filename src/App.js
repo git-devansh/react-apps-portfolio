@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Dsiplay from "./Display/Dsiplay";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ErrorPage from "./pages/ErrorPage";
+import ReviewUI from "./pages/ReviewUI/ReviewUI";
+import ScrollToTop from "./Healper/ScrollToTop";
+import WeatheNext from "./pages/Weather/WeatherNext";
+import TrelloClone from "./pages/TrelloClone/TrelloClone";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Dsiplay />} />
+        <Route path="/ReviewUI" element={<ReviewUI />} />
+        <Route path="/weather" element={<WeatheNext />} />
+        <Route path="/trelloClone" element={<TrelloClone />} />
+
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Router>
   );
 }
 

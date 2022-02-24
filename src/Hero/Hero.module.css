@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(226, 208, 114);
+}
+
+.leftcontent {
+  width: 400px;
+}
+
+.rightcontent {
+  display: block;
+}
+
+.heroimage {
+  display: block;
+  border-style: none;
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: auto;
+}
+
+h1 span {
+  color: rgb(5, 104, 218);
+}
+
+/* hi wave */
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
